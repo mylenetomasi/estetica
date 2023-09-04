@@ -11,7 +11,7 @@ class ClienteListSerializer(ModelSerializer):
         model = Cliente
         fields = ["id", "nome", "telefone", "cpf"]
 
-class ClienteDetaiSerializer(ModelSerializer):
+class ClienteDetailSerializer(ModelSerializer):
     class Meta:
         model = Cliente
         fields = "__all__"
