@@ -1,5 +1,5 @@
-from .pacote import PacoteSerializer,PacoteListSerializer,PacoteDetaiSerializer
+from .pacote import PacoteSerializer,PacoteListSerializer,PacoteDetailSerializer
 from .cliente import ClienteSerializer, ClienteListSerializer, ClienteDetailSerializer
 from .pacoteprocesso import PacotesProcessoSerializer
-from .procedimento import  ParocedimentoSerializer, ProcedimentoListSerializer, ProcedimentoDetaiSerializer
+from .procedimento import  ProcedimentoSerializer, ProcedimentoListSerializer, ProcedimentoDetailSerializer
 from .agendamento import AgendamentoSerializer

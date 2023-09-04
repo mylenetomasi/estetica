@@ -1,7 +1,7 @@
 from rest_framework.serializers import ModelSerializer
 from estetica.models import Procedimento
 
-class ParocedimentoSerializer(ModelSerializer):
+class ProcedimentoSerializer(ModelSerializer):
     class Meta:
         model = Procedimento
         fields= "__all__"
@@ -9,9 +9,9 @@ class ParocedimentoSerializer(ModelSerializer):
 class ProcedimentoListSerializer(ModelSerializer):
     class Meta:
         model = Procedimento
-        fields = ["id", "nome", "valor"]
+        fields = ["id", "nome", "preco"]
 
-class ProcedimentoDetaiSerializer(ModelSerializer):
+class ProcedimentoDetailSerializer(ModelSerializer):
     class Meta:
         model = Procedimento
         fields = "__all__"
