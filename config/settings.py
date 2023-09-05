@@ -27,17 +27,10 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.fl0.io/",
 ]
 
-SECRET_KEY = (
-    "django-insecure-o$yihd5u#3b7@i7enym#u5kqwd+t++j4j548f*&oqstr#bs^$#"
-)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
