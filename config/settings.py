@@ -31,6 +31,9 @@ INSTALLED_APPS = [
     "estetica",
     "usuario",
     "uploader",
+    "django.contrib.staticfiles",
+    "cloudinary_storage",
+    "cloudinary",
     "drf_spectacular",
     "rest_framework",
     "corsheaders",
@@ -158,3 +161,10 @@ if MODE == "PRODUCTION":
     STATICFILES_STORAGE = (
         "whitenoise.storage.CompressedManifestStaticFilesStorage"
     )
+STATIC_URL = "/static/"
+
+if MODE in ["PRODUCTION", "MIGRATE"]:
+    CLOUDINARY_URL = os.getenv("CLOUDINARY_URL")
+    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+    STATIC_ROOT = os.path.join(BASE_DIR, "static")
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
