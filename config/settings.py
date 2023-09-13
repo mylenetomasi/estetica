@@ -31,7 +31,6 @@ INSTALLED_APPS = [
     "estetica",
     "usuario",
     "uploader",
-    "django.contrib.staticfiles",
     "cloudinary_storage",
     "cloudinary",
     "drf_spectacular",
