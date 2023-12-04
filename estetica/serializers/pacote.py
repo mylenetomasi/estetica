@@ -3,9 +3,9 @@ from estetica.models import Pacote
 from uploader.models import Image
 from uploader.serializers import ImageSerializer
 
-class PacoteSerializer(serializers.ModelSerializer):
+class PacoteSerializer(ModelSerializer):
     class Meta:
-        imagem_attachment_key = serializers.SlugRelatedField(
+        imagem_attachment_key = SlugRelatedField(
             source="imagem",
             queryset=Image.objects.all(),
             slug_field="attachment_key",
@@ -16,9 +16,9 @@ class PacoteSerializer(serializers.ModelSerializer):
         model = Pacote
         fields= "__all__"
 
-class PacoteListSerializer(serializers.ModelSerializer):
+class PacoteListSerializer(ModelSerializer):
     class Meta:
-        imagem = serializers.SerializerMethodField()
+        imagem = SerializerMethodField()
         model = Pacote
         fields = ["id", "nome", "status", "preco", "descricao"]
 
