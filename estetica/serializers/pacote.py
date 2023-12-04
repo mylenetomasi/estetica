@@ -20,7 +20,7 @@ class PacoteListSerializer(ModelSerializer):
     class Meta:
         imagem = SerializerMethodField()
         model = Pacote
-        fields = ["id", "nome", "status"]
+        fields = ["id", "nome", "status", "preco", "descricao"]
 
 class PacoteDetailSerializer(ModelSerializer):
     class Meta:
