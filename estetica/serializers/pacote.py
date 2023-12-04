@@ -11,7 +11,7 @@ class PacoteSerializer(ModelSerializer):
         required=False,
         write_only=True,
     )
-    imagem = ImageSerializer(required=False, read_only=True)
+    imagem = ImageSerializer(required=False, read_only=True, many=True)
     class Meta:
 
         model = Pacote
