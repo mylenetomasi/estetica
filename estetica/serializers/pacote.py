@@ -22,7 +22,7 @@ class PacoteListSerializer(ModelSerializer):
         model = Pacote
         fields = ["id", "nome", "status", "preco", "descricao"]
 
-class PacoteDetailSerializer(serializers.ModelSerializer):
+class PacoteDetailSerializer(ModelSerializer):
     class Meta:
         model = Pacote
         fields = "__all__"
