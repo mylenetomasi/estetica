@@ -13,7 +13,7 @@ class PacoteSerializer(ModelSerializer):
             write_only=True,
         )
         imagem = ImageSerializer(required=False, read_only=True)
-         model = Pacote
+        model = Pacote
         fields= "__all__"
 
 class PacoteListSerializer(ModelSerializer):
