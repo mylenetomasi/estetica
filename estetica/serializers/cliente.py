@@ -9,7 +9,7 @@ class ClienteSerializer(ModelSerializer):
 class ClienteListSerializer(ModelSerializer):
     class Meta:
         model = Cliente
-        fields = ["id", "nome", "telefone", "cpf"]
+        fields = "__all__"
 
 class ClienteDetailSerializer(ModelSerializer):
     class Meta:
