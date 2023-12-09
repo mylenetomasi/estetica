@@ -20,7 +20,7 @@ class ProcedimentoListSerializer(ModelSerializer):
     class Meta:
         imagem = SerializerMethodField()
         model = Procedimento
-        fields = ["id", "nome", "preco"]
+        fields = ["id", "nome", "preco", "descricao", "status"]
 
 class ProcedimentoDetailSerializer(ModelSerializer):
     class Meta:
