@@ -33,6 +33,13 @@ build-backend = "pdm.backend"
 dev = [
     "black>=23.7.0",
 ]
+
+[tool.pdm.dependencies]
+python = ">=3.10"
+django = ">=3.2,<4.0"
+djangorestframework = ">=3.12,<4.0"
+djangorestframework-simplejwt = ">=5.0,<6.0"
+
 [[tool.pdm.autoexport]]
 filename = "requirements.txt"
 without-hashes = "true"
