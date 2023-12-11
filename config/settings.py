@@ -30,7 +30,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "cloudinary_storage",
     "cloudinary",
-    "drf_spectacular",
+    "drf_spectacular",'django.contrib.staticfiles',
+    'cloudinary_storage',
+    'cloudinary'
     "estetica",
     "usuario",
     "uploader",
@@ -133,8 +135,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "static/"
-
-STATIC_URL = "/static/"
 
 if MODE in ["PRODUCTION", "MIGRATE"]:
     CLOUDINARY_URL = os.getenv("CLOUDINARY_URL")
